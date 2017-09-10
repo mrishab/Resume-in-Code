@@ -1,3 +1,21 @@
+body{
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
 .tag{
-    display: block;
+    display: flex;
+    color: rgb(156, 102, 102)
+}
+
+.element{
+    margin: 0px 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(153, 153, 219);
+}
+
+div{
+    display: flex;
 }
