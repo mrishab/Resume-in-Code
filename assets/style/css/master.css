@@ -1,21 +1,98 @@
-body{
-    background-color: rgb(32, 32, 32);
+h1, h2, h3, small, a, li, dl, dd, dt, strong{
+    display: flex;
+    margin: 5px;
+    flex-flow: row nowrap;
+}
+
+a>.tag{
+    width: auto;
+}
+p>a{
+    width: auto;
+}
+dl{
+    max-width: 100%;
+    flex-flow: row wrap;
+}
+dt{
+    width: 30%;
+    text-align: left;
+}
+dl>.tag{
+    width: 100%;
+}
+dd{
+    margin: 0;
+    width: 67%;
+}
+dt, dd{
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+h1, h2{
+    justify-content: space-between;
+}
+h3{
+    margin: 5px 0px;
+}
+
+h1>small{
+    justify-content: space-around;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5em;
+    text-align: center;
     color: white;
+    background-color:  rgb(143, 0, 204);
+}
+h2>.tag{
+    color: white;
+}
+body{
+    background-color:rgb(251, 240, 255);
+    text-align: justify;
+}
+.page{
+    display: block;
+    width: 70%;
+    margin: auto;
 }
 .tag{
     display: flex;
-    color: rgb(156, 102, 102)
-}
-
-.element{
-    margin: 0px 10px;
+    color: rgb(143, 0, 204);
 }
 
 a{
     text-decoration: none;
-    color: rgb(153, 153, 219);
+    color: rgb(0, 255, 16);
 }
 
-div{
+ul{
+    list-style-type: none;
+}
+
+dl,dt{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+dd{
+    font-weight: normal;
+}
+
+h3+small, h2+small, h1+small{
+    margin-top:-5px;
+}
+h1+small{
+    justify-content: space-between;
+}
+li{
+    width: 100%;
     display: flex;
+    justify-content: space-between;
 }
